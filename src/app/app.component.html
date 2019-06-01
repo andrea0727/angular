@@ -1,0 +1,39 @@
+<section>
+  <h1>Autentiquemonos en Github 😉</h1>
+  <form #form="ngForm" (ngSubmit)="login(form.value)">
+    <div class="form-group">
+      <input class="form-group"
+        id="username"
+        type="text"
+        placeholder="Añade el nombre de usuario ..."
+        required
+        [(ngModel)]="model.username"
+        name="username" />
+    </div>
+    <button type='submit'>Enviar!!</button>
+  </form>
+  <label class="label">Form Model: {{this.model | json}}</label><br />
+</section>
+{{reposList | json}}
+<table class="table" id="reposTable">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Language</th>
+      <th>Default Branch</th>
+      <th>Git Url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
